@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management | Property Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Management</h1>
+    </header>
+
+    <div class="container">
+        <h2>Manage Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USR001</td>
+                    <td>John Kimani</td>
+                    <td>johnkimani@gmail.com</td>
+                    <td>Admin</td>
+                    <td>Active</td>
+                    <td>
+                        <a href="#" class="button">Edit</a>
+                        <a href="#" class="button">Deactivate</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>USR002</td>
+                    <td>Jane Wanjiru</td>
+                    <td>janewanjiru@gmil.com</td>
+                    <td>Manager</td>
+                    <td>Active</td>
+                    <td>
+                        <a href="#" class="button">Edit</a>
+                        <a href="#" class="button">Deactivate</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>USR003</td>
+                    <td>Emily Achieng</td>
+                    <td>emilyachieng@gmail.com</td>
+                    <td>Tenant</td>
+                    <td>Inactive</td>
+                    <td>
+                        <a href="#" class="button">Edit</a>
+                        <a href="#" class="button">Activate</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Add New User</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="role">Role:</label><br>
+            <select id="role" name="role">
+                <option value="Admin">Admin</option>
+                <option value="Manager">Manager</option>
+                <option value="Tenant">Tenant</option>
+            </select><br><br>
+
+            <button type="submit" class="button">Add User</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Property Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

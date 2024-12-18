@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Requests | Property Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maintenance Requests</h1>
+    </header>
+
+    <div class="container">
+        <h2>Pending Maintenance Requests</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Request ID</th>
+                    <th>Property</th>
+                    <th>Tenant Name</th>
+                    <th>Issue Description</th>
+                    <th>Request Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>REQ001</td>
+                    <td>Property A</td>
+                    <td>John Kimani</td>
+                    <td>Leaking faucet in kitchen</td>
+                    <td>2024-12-10</td>
+                    <td>Pending</td>
+                    <td><a href="#" class="button">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>REQ002</td>
+                    <td>Property B</td>
+                    <td>Jane Wanjiru</td>
+                    <td>Heating system not working</td>
+                    <td>2024-12-12</td>
+                    <td>In Progress</td>
+                    <td><a href="#" class="button">Update Status</a></td>
+                </tr>
+                <tr>
+                    <td>REQ003</td>
+                    <td>Property C</td>
+                    <td>Emily Achieng</td>
+                    <td>Broken window</td>
+                    <td>2024-12-13</td>
+                    <td>Pending</td>
+                    <td><a href="#" class="button">Assign Contractor</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Completed Maintenance Requests</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Request ID</th>
+                    <th>Property</th>
+                    <th>Tenant Name</th>
+                    <th>Issue Description</th>
+                    <th>Completion Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>REQ004</td>
+                    <td>Property D</td>
+                    <td>Michael Olunga</td>
+                    <td>Paint peeling in living room</td>
+                    <td>2024-12-09</td>
+                    <td>Completed</td>
+                    <td><a href="#" class="button">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>REQ005</td>
+                    <td>Property E</td>
+                    <td>Sarah Munyoki</td>
+                    <td>Clogged drain in bathroom</td>
+                    <td>2024-12-08</td>
+                    <td>Completed</td>
+                    <td><a href="#" class="button">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Property Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

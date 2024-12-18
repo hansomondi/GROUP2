@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | Property Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notifications</h1>
+    </header>
+
+    <div class="container">
+        <h2>Recent Notifications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Notification ID</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NOT001</td>
+                    <td>2024-12-15</td>
+                    <td>Reminder</td>
+                    <td>Rent payment is due for Property A.</td>
+                    <td><a href="#" class="button">View</a></td>
+                </tr>
+                <tr>
+                    <td>NOT002</td>
+                    <td>2024-12-14</td>
+                    <td>Maintenance</td>
+                    <td>Maintenance request REQ001 has been updated to In Progress.</td>
+                    <td><a href="#" class="button">View</a></td>
+                </tr>
+                <tr>
+                    <td>NOT003</td>
+                    <td>2024-12-13</td>
+                    <td>Alert</td>
+                    <td>New tenant lease agreement needs your approval for Property B.</td>
+                    <td><a href="#" class="button">Approve</a></td>
+                </tr>
+                <tr>
+                    <td>NOT004</td>
+                    <td>2024-12-12</td>
+                    <td>Report</td>
+                    <td>Financial report for November 2024 is now available.</td>
+                    <td><a href="#" class="button">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Property Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
